@@ -1,0 +1,16 @@
+{
+    "EntityType" : "GcpArtifactRegistryRepo",
+    "GcpAssetType" : "artifactregistry.googleapis.com/Repository",
+    "Fields" : [
+      "createTime",
+      "description",
+      "format",
+      "labels"
+    ],
+    "EntitiesCollection" : "GcpArtifactRegistryRepoEntity",
+    "EntityNameProperty" : "name",
+    "IsRulesEngineBaseEntity" : true,
+    "ShouldIndexEntity" : false,
+    "DateTimeProperties" : ["createTime"],
+    "SchemaFileName" : "GcpBigQueryTableSchema.json"
+}
