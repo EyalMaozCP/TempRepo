@@ -1,0 +1,11 @@
+﻿{
+  "EntityType": "NewFetching_Test_GcpBigQueryTable",
+  "GcpAssetType": "bigquery.googleapis.com/Table",
+  "Fields": [ "creationTime", "id", "kind", "tableReference", "encryptionConfiguration", "view", "expirationTime" ],
+  "EntitiesCollection": "NewFetching_Test_GcpBigQueryTableEntity",
+  "EntityNameProperty": "name",
+  "ShouldIndexEntity": false,
+  "IsRulesEngineBaseEntity": false,
+  "DateTimeProperties": [ "creationTime", "expirationTime", "updateTime" ],
+  "SchemaFileName": "GcpBigQueryTableSchema.json"
+}

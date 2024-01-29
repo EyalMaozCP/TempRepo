@@ -1,0 +1,11 @@
+﻿{
+  "EntityType": "NewFetching_Test_GcpDataprocCluster",
+  "GcpAssetType": "dataproc.googleapis.com/Cluster",
+  "Fields": [ "projectId", "clusterName", "config", "virtualClusterConfig", "labels", "status", "clusterUuid", "metrics" ],
+  "EntitiesCollection": "NewFetching_Test_GcpDataprocClusterEntity",
+  "EntityNameProperty": "clusterName",
+  "ShouldIndexEntity": false,
+  "IsRulesEngineBaseEntity": false,
+  "DateTimeProperties": [ "updateTime" ],
+  "SchemaFileName": "GcpDataprocClusterSchema.json"
+}

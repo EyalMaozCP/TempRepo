@@ -1,0 +1,304 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "displayName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "kind": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tableReference": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "projectId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "datasetId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tableId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "datasetId",
+        "projectId",
+        "tableId"
+      ]
+    },
+    "labels": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        " ": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        " "
+      ]
+    },
+    "creationTime": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "expirationTime": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "updateTime": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "encryptionConfiguration": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "kmsKeyName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kmsKeyName"
+      ]
+    },
+    "iamPolicy": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "version": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "bindings": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "role": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "members": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "condition": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "properties": {
+                  "expression": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "title": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "location": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "description",
+                  "expression",
+                  "location",
+                  "title"
+                ]
+              }
+            },
+            "required": [
+              "condition",
+              "members",
+              "role"
+            ]
+          }
+        },
+        "auditConfigs": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "service": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "auditLogConfigs": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "logType": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "exemptedMembers": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "exemptedMembers",
+                    "logType"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "auditLogConfigs",
+              "service"
+            ]
+          }
+        },
+        "etag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "auditConfigs",
+        "bindings",
+        "etag",
+        "version"
+      ]
+    }
+  },
+  "required": [
+    "creationTime",
+    "description",
+    "encryptionConfiguration",
+    "expirationTime",
+    "iamPolicy",
+    "id",
+    "kind",
+    "labels",
+    "location",
+    "name",
+    "displayName",
+    "tableReference",
+    "updateTime"
+  ]
+}
